@@ -14,22 +14,22 @@ public class PriceEntity {
     static final String TABLE_NAME = "PRICES";
 
     @Id
-    Integer priceList;
+    private Integer priceList;
 
-    Integer productId;
+    private Integer productId;
 
-    Integer brandId;
+    private Integer brandId;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "curr")
-    Currency currency;
+    private Currency currency;
 
-    Float price;
+    private Float price;
 
-    Integer priority;
+    private Integer priority;
 
-    String startDate;
+    private String startDate;
 
-    String endDate;
+    private String endDate;
 
 }

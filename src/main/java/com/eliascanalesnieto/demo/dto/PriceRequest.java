@@ -9,12 +9,12 @@ import javax.validation.constraints.Positive;
 public class PriceRequest {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
-    final String effectiveDate;
+    private final String effectiveDate;
 
     @Positive
-    final Integer productId;
+    private final Integer productId;
 
     @Positive
-    final Integer brandId;
+    private final Integer brandId;
 
 }
